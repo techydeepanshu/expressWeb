@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+
+
+    {{>header}}
+    <main >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    {{!-- get input --}}
+                    <div class="main_content">
+                        <form class="temp_form">
+                            <input type="text" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                            <input type="submit" value="search" id="submitBtn">
+                        </form>
+                    </div>
+                    {{!-- show output --}}
+                    <div id="addbg">
+
+                        <div class="tempInformation ">
+                            <div class="top_layer">
+                                <p class="day">tuesday</p>
+                                <p class="today_data">13 oct</p>
+                            </div>
+                            <div class="main_layer">
+                                <p id="city_name">get outupt here</p>
+                                <div class="middle_layer data_hide">
+                                    <p class="temp"><span>0</span> <sup>o</sup>C</p>
+                                    <p class="temp_status"> </p>
+                                    {{!-- <p class="temp_desp"> </p> --}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {{>footer}}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="js\main.js"></script>
+
+</body>
+
+</html>
