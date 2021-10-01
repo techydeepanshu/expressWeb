@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const hbs = require('hbs');  //this for using partials in .hbs files
 const app = express();
-const port = 3000; // process.env.PORT is using when deploy on live
-// const port = process.env.PORT || 3000; // process.env.PORT is using when deploy on live
+// const port = 3000; // process.env.PORT is using when deploy on live
+const port = process.env.PORT || 3000; // process.env.PORT is using when deploy on live
 
 
 app.set("view engine","hbs");
